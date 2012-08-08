@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Cam detection demo</title>
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+		swfobject.embedSWF("av-device-log.swf", "DeviceLogPlaceholder", "10", "10", "11.0.0", "expressInstall.swf");
+	var camstring = "Cams: <br />";
+	function onCameraFound(cam){
+		camstring = camstring + cam + "<br />";
+	}
+
+	var micstring = "Mics: <br />";
+	function onMicrophoneFound(mic){
+		micstring = micstring +  mic + "<br />";
+	}
+
+	function onDetectionComplete(){
+		document.getElementById("output").innerHTML = camstring + micstring;
+	}
+</script>
+</head>
+<body>
+	<div id="DeviceLogPlaceholder"></div>
+	<div id="output"></div>
+</body>
+</html>
