@@ -1,4 +1,4 @@
-av-device-log
+av-device-log (Camera and Microphone detection on Web)
 =============
 Extremely small utility to be able to detect (and in my original use case log) what Camera and Microphones people visiting have using Flash with callbacks to javascript. It is implemented in Haxe so no Adobe programs needed for compilation.
 
